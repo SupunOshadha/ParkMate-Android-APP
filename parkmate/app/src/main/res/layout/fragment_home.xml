@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/bookings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Gold"
+        android:fadingEdge="horizontal|vertical"
+        android:shadowColor="@color/Dark_Grey"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:text="Your Bookings"
+        android:textColor="@color/Dark_Grey"
+        android:translationX="125dp"
+        android:translationY="600dp"
+        app:cornerRadius="25dp"
+        app:strokeColor="@color/Dark_Grey"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:apiKey="AIzaSyDMQxjitQoKKKMStMBwDXBDjAZoIMVGM7k"
+        android:contentDescription="@string/map_content_description"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:translationX="15dp"
+        android:translationY="220dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:alpha="0.9"
+        android:background="@color/Gold"
+        android:backgroundTintMode="screen"
+        android:orientation="horizontal"
+        android:translationY="20dp">
+
+        <TextView
+            android:id="@+id/tv_ParkMate_Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ParkMate"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:transformPivotX="2dp"
+            android:translationX="120dp"
+            android:translationY="40dp" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_account_circle_24"
+            android:translationX="110dp"
+            android:translationY="60dp" />
+
+        <ImageView
+            android:id="@+id/img_LogOut"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_logout_24"
+            android:translationY="90dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewHelp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/baseline_help_center_24"
+        android:translationX="15dp"
+        android:translationY="150dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFeedback"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/baseline_feedback_24"
+        android:translationX="360dp"
+        android:translationY="150dp" />
+</FrameLayout>

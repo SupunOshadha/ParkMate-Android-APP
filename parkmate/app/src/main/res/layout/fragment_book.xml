@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gold"
+    tools:context=".BookFragment">
+
+    <TextView
+        android:id="@+id/tv_AvailableSpots_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Spots"
+        android:textSize="18sp"
+        android:translationX="50dp"
+        android:translationY="340dp" />
+
+    <TextView
+        android:id="@+id/tv_Occupied_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupied Spots"
+        android:textSize="18sp"
+        android:translationX="50dp"
+        android:translationY="400dp" />
+
+    <TextView
+        android:id="@+id/tv_SpotsNos_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Spots no"
+        android:textSize="18sp"
+        android:translationX="50dp"
+        android:translationY="460dp" />
+
+    <Button
+        android:id="@+id/booknext"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/Dark_Grey"
+        android:text="Next"
+        android:translationX="130dp"
+        android:translationY="600dp"
+        app:cornerRadius="25dp" />
+
+    <TextView
+        android:id="@+id/tv_LotDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking Lot Details"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:translationX="100dp"
+        android:translationY="200dp" />
+
+    <TextView
+        android:id="@+id/tv_LotNames_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Parking Lot"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationX="30dp"
+        android:translationY="100dp" />
+
+    <Spinner
+        android:id="@+id/parkingLotSpinner"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:hint="@string/select_parking_lot"
+        android:labelFor="@+id/parkingLotSpinner"
+        android:translationX="230dp"
+        android:translationY="90dp"
+        android:contentDescription="@string/parking_lot_spinner_description"/>
+
+    <TextView
+        android:id="@+id/tv_TotalSpots_Lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spots"
+        android:textSize="18sp"
+        android:translationX="50dp"
+        android:translationY="280dp" />
+
+    <TextView
+        android:id="@+id/tv_totalSpots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:translationX="300dp"
+        android:translationY="280dp" />
+
+    <TextView
+        android:id="@+id/tv_AvailableSpots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:translationX="300dp"
+        android:translationY="340dp" />
+
+    <TextView
+        android:id="@+id/tv_OccupiedSpots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:translationX="300dp"
+        android:translationY="400dp" />
+
+    <TextView
+        android:id="@+id/tv_AvailableSpotsNos"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:translationX="300dp"
+        android:translationY="460dp" />
+
+</FrameLayout>

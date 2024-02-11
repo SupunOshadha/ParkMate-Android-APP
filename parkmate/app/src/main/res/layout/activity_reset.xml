@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gold"
+    tools:context=".ResetActivity">
+
+    <EditText
+        android:id="@+id/edUserNameResetPsw"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="User name"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReset" />
+
+    <EditText
+        android:id="@+id/edEmailResetPsw"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Email"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUserNameResetPsw" />
+
+    <EditText
+        android:id="@+id/edNewPswResetPsw"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:includeFontPadding="false"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmailResetPsw" />
+
+    <EditText
+        android:id="@+id/edConfirmResetPsw"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:includeFontPadding="false"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNewPswResetPsw" />
+
+    <TextView
+        android:id="@+id/tvReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Reset Password"
+        android:textAlignment="center"
+        android:textColor="@color/Dark_Grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Reset"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/Dark_Grey"
+        android:text="Reset"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edConfirmResetPsw" />
+</androidx.constraintlayout.widget.ConstraintLayout>

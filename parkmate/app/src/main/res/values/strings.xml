@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ParkMate</string>
+    <string name="map_content_description">Map showing the location of the parking lot.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="parking_lots">
+        <item>Select a Parking Lot</item>
+        <item>Regal Cinema</item>
+        <item>Lanka Hospital</item>
+        <item>MC</item>
+        <item>House of Fashion</item>
+    </string-array>
+    <string name="select_parking_lot">Select Parking Lot</string>
+    <string name="parking_lot_spinner_description">Select a parking lot from the list</string>
+
+</resources>
